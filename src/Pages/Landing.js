@@ -1,5 +1,5 @@
 import { ChevronRightRounded } from "@mui/icons-material";
-import { Typography, Box, Grid, Card } from "@mui/material";
+import { Typography, Box, Grid, Card, IconButton } from "@mui/material";
 import React from "react";
 
 export default function Landing() {
@@ -17,8 +17,9 @@ export default function Landing() {
           variant="h5"
           sx={{ mt: 7, opacity: "70%", pr: { md: 25, xs: 0 } }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim
-          purus eu nunc ullamcorper, vel convallis ante tincidunt.
+          We use modern technologies to build sustainable solutions that benefit
+          the people. We primarily focus on open-source software for health
+          care, education and communication.
         </Typography>
       </Box>
       {/*  */}
@@ -39,11 +40,11 @@ export default function Landing() {
           variant="h5"
           sx={{ mt: 7, opacity: "70%", pr: { md: 25, xs: 0 } }}
         >
-          Donec vel sodales risus, eu commodo lectus. Fusce at ipsum consequat,
-          vehicula dui id, ultricies neque. Ut in lorem vitae purus ultricies
-          fermentum. Mauris tempus, dolor eget posuere tempus, mauris lacus
-          vestibulum ipsum, vel accumsan elit sem id odio. Nulla non turpis eget
-          risus facilisis gravida. Integer facilisis placerat quam id pharetra.
+          We are inspired by many great individuals who take action. We know
+          that we can only inspire change and drive development by leading the
+          way so we are! We hope to be the change that we expect and we are
+          doing our part to get there. We build in the open and encourage you to
+          join us on our mission to make the world better and more accessible.
         </Typography>
       </Box>
       {/*  */}
@@ -66,14 +67,21 @@ export default function Landing() {
                 </Typography>
               </Box>
               <Typography variant="body1" sx={{ py: 3 }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                dignissim purus eu nunc ullamcorper, vel convallis ante
-                tincidunt. Vivamus lacinia, lacus nec tristique bibendum, velit
-                libero consequat purus, ut finibus ex lectus eget nisi. Nulla
-                facilisi.
+                SMSWithoutBorders keeps the conversation going with secure
+                messaging tools that empower your voice (RelaySMS and DekuSMS).
               </Typography>
-              <Typography variant="body1">
-                Learn More <ChevronRightRounded />
+              <Typography
+                component="a"
+                href="https://smswithoutborders.com"
+                target="_blank"
+                variant="body1"
+                sx={{ textDecoration: "none", color: "whitesmoke" }}
+              >
+                Learn More
+                <IconButton>
+                  {" "}
+                  <ChevronRightRounded />
+                </IconButton>
               </Typography>
             </Card>
           </Grid>
@@ -86,19 +94,26 @@ export default function Landing() {
                 </Typography>
               </Box>
               <Typography variant="body1" sx={{ py: 3 }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                dignissim purus eu nunc ullamcorper, vel convallis ante
-                tincidunt. Vivamus lacinia, lacus nec tristique bibendum, velit
-                libero consequat purus, ut finibus ex lectus eget nisi. Nulla
-                facilisi.
+                Open API enables you send single and bulk sms messages from your
+                very own managed gateway systems
               </Typography>
-              <Typography variant="body1">
-                Learn More <ChevronRightRounded />
+              <Typography
+                component="a"
+                href="https://github.com/smswithoutborders/SMSWithoutBorders-OpenAPI"
+                target="_blank"
+                variant="body1"
+                sx={{ textDecoration: "none", color: "whitesmoke" }}
+              >
+                Learn More{" "}
+                <IconButton>
+                  {" "}
+                  <ChevronRightRounded />
+                </IconButton>
               </Typography>
             </Card>
           </Grid>
           {/*  */}
-          <Grid item md={6} xs={12} sm={6}>
+          {/* <Grid item md={6} xs={12} sm={6}>
             <Card sx={{ p: 4 }}>
               <Box display="flex">
                 <Box component="img" src="chpris.png" sx={{ width: "20%" }} />
@@ -113,8 +128,46 @@ export default function Landing() {
                 libero consequat purus, ut finibus ex lectus eget nisi. Nulla
                 facilisi.
               </Typography>
-              <Typography variant="body1">
-                Learn More <ChevronRightRounded />
+              <Typography
+                component="a"
+                href="https://github.com/chpr-tbrl"
+                target="_blank"
+                variant="body1"
+                sx={{ textDecoration: "none", color: "whitesmoke" }}
+              >
+                Learn More{" "}
+                <IconButton>
+                  {" "}
+                  <ChevronRightRounded />
+                </IconButton>
+              </Typography>
+            </Card>
+          </Grid> */}
+          {/*  */}
+          <Grid item md={6} xs={12} sm={6}>
+            <Card sx={{ p: 4 }}>
+              <Box display="flex">
+                <Typography variant="h6" sx={{ mt: 2, ml: 2 }}>
+                  Afkanerd developers manager
+                </Typography>
+              </Box>
+              <Typography variant="body1" sx={{ py: 3 }}>
+                We provide developers the ability to access our resources. We do
+                this by providing them with API keys and IDs which provides them
+                the necessary authentication criteria for our eco-system
+              </Typography>
+              <Typography
+                component="a"
+                href="https://github.com/Afkanerd/Developer-Management-Resource"
+                target="_blank"
+                variant="body1"
+                sx={{ textDecoration: "none", color: "whitesmoke" }}
+              >
+                Learn More{" "}
+                <IconButton>
+                  {" "}
+                  <ChevronRightRounded />
+                </IconButton>
               </Typography>
             </Card>
           </Grid>
